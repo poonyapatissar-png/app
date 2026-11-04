@@ -41,3 +41,11 @@ yarn-error.*
 /android
 
 .vercel
+
+GitSetup.exe
+dist.zip
+dist/
+node_modules/
+.expo/
+.vercel/
+.env

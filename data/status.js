@@ -38,7 +38,7 @@ export function farmerStatus(farmerLogs, now = Date.now()) {
 
   // 2) ความชื้นล่าสุด
   let moisture = { color: 'gray', text: 'ยังไม่วัดความชื้น' };
-  const m = farmerLogs.find((l) => l.type === 'วัดความชื้น');
+  const m = farmerLogs.find((l) => l.type === 'วัดความชื้น' || l.moisture !== undefined);
   if (m) {
     moisture =
       m.moisture <= 15
